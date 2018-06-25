@@ -65,13 +65,14 @@ doManager.addEventListener(
       order
     });
 
-    const q0 = new Quaternion();
-    const q1 = new Quaternion().rotateX(-Math.PI * 80 / 180);
+    // threejs
+    const screenTransform = new Quaternion();
+    const worldTransform = new Quaternion(-Math.sqrt(0.5), 0, 0, Math.sqrt(0.5));
     const euler = new Euler();
     euler.set(pitch, yaw, roll, order);
-    camera.quaternion.fromEuler(euler);
-    camera.quaternion.multiply(q1);
-    camera.quaternion.multiply(q0.setAxisAngle(new Vector3(0, 0, 1), -orientation));
+    camera.quaternion.setFromEuler(euler);
+    camera.quaternion.multiply(worldTransform);
+    camera.quaternion.multiply(screenTransform.setFromAxisAngle(new Vector3(0, 0, 1), -orientation));
   }
 );
 
