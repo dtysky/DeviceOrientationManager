@@ -1,0 +1,76 @@
+{
+  "name": "device-orientation-manager",
+  "version": "0.8.0",
+  "description": "A manager which will help you to control DeviceOrientation easily.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "dev": "node server.dev.js",
+    "build": "tsc -d --outDir lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtysky/DeviceOrientationManager.git"
+  },
+  "keywords": [
+    "Device",
+    "Orientation",
+    "Gyroscope"
+  ],
+  "authors": [
+    {
+      "name": "Tianyu Dai (dtysky)",
+      "email": "dtysky@outlook.com"
+    }
+  ],
+  "license": "MIT",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "bugs": {
+    "url": "https://github.com/dtysky/DeviceOrientationManager/issues"
+  },
+  "homepage": "https://github.com/dtysky/DeviceOrientationManager#readme",
+  "engines": {
+    "install-node": "8"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.52",
+    "autoprefixer": "^7.2.4",
+    "awesome-typescript-loader": "^3.0.0-beta.17",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.8",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.10",
+    "expose-loader": "^0.7.5",
+    "postcss-smart-import": "^0.7.6",
+    "precss": "^2.0.0",
+    "raw-loader": "^0.5.1",
+    "react-hot-loader": "^3.1.3",
+    "sass-loader": "^6.0.6",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.19.1",
+    "tslint": "^4.1.1",
+    "tslint-loader": "^3.5.3",
+    "tslint-microsoft-contrib": "^4.0.0",
+    "typescript": "^2.6.2",
+    "url-loader": "^1.0.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "@types/react": "^16.3.13",
+    "@types/react-dom": "^16.0.5"
+  },
+  "dependencies": {
+    "mitt": "^1.1.3"
+  }
+}
